@@ -1,2 +1,2 @@
 # character-sheet-editor
-Criação de personagem para RPGs
+ Criação de personagens para RPG
