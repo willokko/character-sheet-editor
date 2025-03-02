@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/character-sheet-editor/static/css/main.62f72dec.css",
+    "main.js": "/character-sheet-editor/static/js/main.8c62f690.js",
+    "index.html": "/character-sheet-editor/index.html",
+    "main.62f72dec.css.map": "/character-sheet-editor/static/css/main.62f72dec.css.map",
+    "main.8c62f690.js.map": "/character-sheet-editor/static/js/main.8c62f690.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62f72dec.css",
+    "static/js/main.8c62f690.js"
+  ]
+}
