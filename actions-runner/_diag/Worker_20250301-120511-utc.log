@@ -1,0 +1,1585 @@
+[2025-03-01 12:05:11Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:05:11Z INFO Worker] Version: 2.322.0
+[2025-03-01 12:05:11Z INFO Worker] Commit: 0edc478ca75d0a753dcbcec7405f3f26db67b1ac
+[2025-03-01 12:05:11Z INFO Worker] Culture: pt-BR
+[2025-03-01 12:05:11Z INFO Worker] UI Culture: pt-BR
+[2025-03-01 12:05:11Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-03-01 12:05:11Z INFO ProcessChannel] Receiving message of length 25801, with hash '51932d0cfcae5d0a3f028255010cd65f1e90e874bc6e6f63d4d7cfe025833360'
+[2025-03-01 12:05:11Z INFO Worker] Message received.
+[2025-03-01 12:05:11Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/node.js.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "0b9c8853-e918-5447-b673-a483bb08a582",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v4",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 24,
+        "col": 13,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 27,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 9,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 27,
+              "col": 23,
+              "expr": "matrix.node-version"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 9,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 16,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "3d5e6b70-a7d7-5924-a538-d51b4350cd3b",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 30,
+        "col": 13,
+        "lit": "install dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 12,
+              "lit": "npm install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "9639b1f9-d3e2-577e-3a80-e72bdd821046",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 33,
+        "col": 13,
+        "lit": "Build project"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 12,
+              "lit": "npm run build"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e55668c2-b6f3-58f6-0368-0c152841dc97",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 36,
+        "col": 13,
+        "lit": "Stop pn2"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 37,
+              "col": 12,
+              "lit": "pn2 stop nodedeploy"
+            }
+          }
+        ]
+      },
+      "condition": "failure()",
+      "id": "8a35d970-ddb7-57bc-4d08-2c3047ffae7b",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 40,
+        "col": 13,
+        "lit": "Start pn2"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 41,
+              "col": 12,
+              "lit": "pn2 start backend/server.js --name nodedeploy"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "bf1e077f-f25b-5913-4360-80366d0a36d4",
+      "name": "__run_4"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2025-03-01 12:05:53+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "2"
+    },
+    "build.containerId": {
+      "value": "32738352"
+    },
+    "build.allowCreateArtifacts": {
+      "value": "False"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/node.js.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build._22_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "3"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "3"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build (22.x)"
+    },
+    "system.jobId": {
+      "value": "7b550edd-dd8b-5af2-7e43-cb146d97a45a"
+    },
+    "system.jobName": {
+      "value": "_22_x"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "True"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "True"
+    },
+    "system.testDotNet8Compatibility": {
+      "value": "true"
+    },
+    "system.dotNet8CompatibilityOutputLength": {
+      "value": "200"
+    },
+    "system.dotNet8CompatibilityOutputPattern": {
+      "value": "GLIBCXX"
+    },
+    "system.dotNet8CompatibilityWarning": {
+      "value": "The Actions runner will no longer support your OS version on November 1, 2024. Please upgrade to a supported version. For information, refer https://github.blog/changelog/2024-08-19-notice-of-upcoming-deprecations-and-breaking-changes-in-github-actions-runners/"
+    },
+    "system.orchestrationId": {
+      "value": "ea5597d9-7708-4480-8d67-70231097f17a.build._22_x"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 41,
+    "planId": "ea5597d9-7708-4480-8d67-70231097f17a",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/2",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "character-sheet-editor"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "willokko"
+    }
+  },
+  "timeline": {
+    "id": "ea5597d9-7708-4480-8d67-70231097f17a",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "7b550edd-dd8b-5af2-7e43-cb146d97a45a",
+  "jobDisplayName": "build (22.x)",
+  "jobName": "_22_x",
+  "requestId": 5,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "d154bd3a-711e-4324-a5b6-7acd7d95b173",
+          "ServerName": "gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/",
+          "FeedStreamUrl": "https://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://results-receiver.actions.githubusercontent.com/health\",\"https://pkg.actions.githubusercontent.com/health\",\"https://actions-results-receiver-production.githubapp.com/health\",\"https://pipelinesghubeus12.actions.githubusercontent.com/_apis/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelinesghubeus12.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+        },
+        {
+          "k": "repository",
+          "v": "willokko/character-sheet-editor"
+        },
+        {
+          "k": "repository_owner",
+          "v": "willokko"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "143515354"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/willokko/character-sheet-editor.git"
+        },
+        {
+          "k": "run_id",
+          "v": "13604567456"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "940862971"
+        },
+        {
+          "k": "actor_id",
+          "v": "143515354"
+        },
+        {
+          "k": "actor",
+          "v": "willokko"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "willokko"
+        },
+        {
+          "k": "workflow",
+          "v": "Node.js CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "79f97f688d06a0db3fef463e14ef69d1a806d7de"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "143515354+willokko@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "willokko"
+                              },
+                              {
+                                "k": "username",
+                                "v": "willokko"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update node.js.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-03-01T09:05:16-03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "745cfe442a6b28ad0760de33f07fa35f4069880f"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/willokko/character-sheet-editor/commit/33467c2bd47fed3382a47e5ed123826086d249fe"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/willokko/character-sheet-editor/compare/79f97f688d06...33467c2bd47f"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "143515354+willokko@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "username",
+                            "v": "willokko"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update node.js.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-03-01T09:05:16-03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "745cfe442a6b28ad0760de33f07fa35f4069880f"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/willokko/character-sheet-editor/commit/33467c2bd47fed3382a47e5ed123826086d249fe"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "143515354+willokko@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "willokko"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1740786975.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Criação de personagem para RPGs"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": true
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "id",
+                      "v": 940862971.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "character-sheet-editor"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOBRt-w"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/143515354?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "143515354+willokko@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/willokko/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/willokko/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/willokko/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/willokko/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/willokko"
+                          },
+                          {
+                            "k": "id",
+                            "v": 143515354.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "name",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCI3e2g"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/willokko/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/willokko/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/willokko/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/willokko/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/willokko/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/willokko"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1740830717.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 20107.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-03-01T12:01:13Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/143515354?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/willokko/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/willokko/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/willokko/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/willokko/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/willokko"
+                    },
+                    {
+                      "k": "id",
+                      "v": 143515354.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "willokko"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCI3e2g"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/willokko/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/willokko/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/willokko/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/willokko/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/willokko/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/willokko"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "willokko/character-sheet-editor/.github/workflows/node.js.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_uses_cache_service_v2",
+          "v": true
+        },
+        {
+          "k": "block_artifacts_v3_exempted",
+          "v": false
+        },
+        {
+          "k": "larger_runners_custom_image_generation",
+          "v": false
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "22.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 2.0
+        },
+        {
+          "k": "job-total",
+          "v": 3.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 3.0
+        }
+      ]
+    },
+    "EndpointsOverride": null
+  }
+}
+[2025-03-01 12:05:11Z INFO JobRunner] Job ID 7b550edd-dd8b-5af2-7e43-cb146d97a45a
+[2025-03-01 12:05:11Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.dll
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] binPath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] RootFolder: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] ConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] CredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Service': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service'
+[2025-03-01 12:05:11Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service
+[2025-03-01 12:05:11Z INFO ConfigurationStore] Read setting file: 322 chars
+[2025-03-01 12:05:11Z INFO JobRunner] Creating job server with URL: https://pipelinesghubeus12.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/
+[2025-03-01 12:05:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:05:11Z INFO Worker] Listening for cancel message from the channel.
+[2025-03-01 12:05:11Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-03-01 12:05:11Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:05:11Z INFO JobServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-03-01 12:05:11Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2025-03-01 12:05:11Z INFO JobServerQueue] Initializing results client
+[2025-03-01 12:05:11Z INFO JobServerQueue] Start process web console line queue.
+[2025-03-01 12:05:11Z INFO JobServerQueue] Start process file upload queue.
+[2025-03-01 12:05:11Z INFO JobServerQueue] Start results file upload queue.
+[2025-03-01 12:05:11Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-01 12:05:11Z INFO JobServerQueue] Start process timeline update queue.
+[2025-03-01 12:05:11Z INFO ExecutionContext] Initialize GitHub context
+[2025-03-01 12:05:11Z INFO ExecutionContext] Initialize Env context
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:05:11Z INFO JobRunner] Starting the job execution context.
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO JobRunner] Validating directory permissions for: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Tools': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_tool'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:05:11Z INFO JobRunner] Getting job extension.
+[2025-03-01 12:05:11Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.setup_info'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_PipelineMapping\willokko/character-sheet-editor\PipelineFolder.json
+[2025-03-01 12:05:11Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO JobExtension] Downloading actions
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:05:12Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:05:12Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683' into C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\_temp_4fc3c4d4-62cf-4eab-bd88-80536a5bcaaf\f36b0a10-d37c-4c7c-8d1f-2f36ce7ed453.zip.
+[2025-03-01 12:05:12Z INFO JobServer] Successfully started websocket client.
+[2025-03-01 12:05:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '61126ed0-1425-4885-8d64-26a18cc4b9b7', success rate: 1/1.
+[2025-03-01 12:05:12Z INFO ProcessChannel] Receiving message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2025-03-01 12:05:12Z INFO Worker] Cancellation/Shutdown message received.
+[2025-03-01 12:05:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '61126ed0-1425-4885-8d64-26a18cc4b9b7', success rate: 1/1.
+[2025-03-01 12:05:12Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-03-01 12:05:13Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683 X-GitHub-Request-Id: 334A:398DF1:36928:DDC31:67C2F824 Http Status: OK
+[2025-03-01 12:05:13Z INFO ActionManager] Action download has been cancelled.
+[2025-03-01 12:05:13Z ERR  JobExtension] Caught cancellation exception from JobExtension Initialization: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryArchive(IExecutionContext executionContext, String downloadUrl, String downloadAuthToken, String archiveFile)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadInfo downloadInfo)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2025-03-01 12:05:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '61126ed0-1425-4885-8d64-26a18cc4b9b7', success rate: 1/1.
+[2025-03-01 12:05:13Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "61126ed0-1425-4885-8d64-26a18cc4b9b7",
+  "result": "canceled",
+  "errorMessages": [
+    "A task was canceled."
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-03-01T12:05:11.9604694Z",
+  "finishTime": "2025-03-01T12:05:13.2882035Z"
+}.
+[2025-03-01 12:05:13Z ERR  JobRunner] Job is cancelled during initialize.
+[2025-03-01 12:05:13Z ERR  JobRunner] Caught exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryArchive(IExecutionContext executionContext, String downloadUrl, String downloadAuthToken, String archiveFile)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadInfo downloadInfo)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2025-03-01 12:05:13Z INFO JobRunner] Shutting down the job server queue.
+[2025-03-01 12:05:13Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-03-01 12:05:13Z INFO JobServerQueue] All queue process task stopped.
+[2025-03-01 12:05:13Z INFO JobServerQueue] Web console line queue drained.
+[2025-03-01 12:05:13Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-03-01 12:05:14Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-03-01 12:05:14Z INFO JobServerQueue] File upload queue drained.
+[2025-03-01 12:05:14Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-01 12:05:14Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-03-01 12:05:14Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-01 12:05:14Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\ea5597d9-7708-4480-8d67-70231097f17a_61126ed0-1425-4885-8d64-26a18cc4b9b7.1
+[2025-03-01 12:05:15Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-03-01 12:05:15Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\ea5597d9-7708-4480-8d67-70231097f17a_7b550edd-dd8b-5af2-7e43-cb146d97a45a.1
+[2025-03-01 12:05:15Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-03-01 12:05:15Z INFO JobServerQueue] Results upload queue drained.
+[2025-03-01 12:05:15Z INFO JobServerQueue] Timeline update queue drained.
+[2025-03-01 12:05:15Z INFO JobServerQueue] Disposing job server ...
+[2025-03-01 12:05:15Z INFO JobServerQueue] Disposing results server ...
+[2025-03-01 12:05:15Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-03-01 12:05:15Z INFO JobServerQueue] Actions upload time: 534 ms, Result upload time: 1046 ms
+[2025-03-01 12:05:15Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp
+[2025-03-01 12:05:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:05:15Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:05:15Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\.telemetry'
+[2025-03-01 12:05:15Z INFO JobRunner] Raising job completed event

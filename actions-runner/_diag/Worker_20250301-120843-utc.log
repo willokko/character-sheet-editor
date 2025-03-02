@@ -1,0 +1,3829 @@
+[2025-03-01 12:08:43Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-01 12:08:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:43Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:08:44Z INFO Worker] Version: 2.322.0
+[2025-03-01 12:08:44Z INFO Worker] Commit: 0edc478ca75d0a753dcbcec7405f3f26db67b1ac
+[2025-03-01 12:08:44Z INFO Worker] Culture: pt-BR
+[2025-03-01 12:08:44Z INFO Worker] UI Culture: pt-BR
+[2025-03-01 12:08:44Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-03-01 12:08:44Z INFO ProcessChannel] Receiving message of length 25801, with hash '9eb357d140e668191083d2b5f7acfbc6322511012796a04a24db4c70cd18dfcf'
+[2025-03-01 12:08:44Z INFO Worker] Message received.
+[2025-03-01 12:08:44Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/node.js.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "5d7618ff-3bb2-5757-b1b5-7570fdc92efe",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v4",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 24,
+        "col": 13,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 27,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 9,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 27,
+              "col": 23,
+              "expr": "matrix.node-version"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 9,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 16,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "43899a0a-62a9-593f-df0f-106bff2bdd16",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 30,
+        "col": 13,
+        "lit": "install dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 12,
+              "lit": "npm install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "d2d6f2f0-0657-5411-093d-6c259624ba97",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 33,
+        "col": 13,
+        "lit": "Build project"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 12,
+              "lit": "npm run build"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "1e48a434-37ad-5f8f-0861-6fd8aebe4c99",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 36,
+        "col": 13,
+        "lit": "Start Server"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 37,
+              "col": 12,
+              "lit": "cd backend; node server.js"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "205f3bb5-a40b-5a73-93b4-0bf6bece9eca",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 39,
+        "col": 13,
+        "lit": "Start frontend"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 40,
+              "col": 12,
+              "lit": "cd ..; cd frontend; npm start"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "a106c9cb-5503-59f8-805c-a3a7fb159aae",
+      "name": "__run_4"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2025-03-01 12:09:25+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "3"
+    },
+    "build.containerId": {
+      "value": "32738414"
+    },
+    "build.allowCreateArtifacts": {
+      "value": "False"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/node.js.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build._18_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "3"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build (18.x)"
+    },
+    "system.jobId": {
+      "value": "6621f301-ad18-5d46-97dd-869f4cb20c65"
+    },
+    "system.jobName": {
+      "value": "_18_x"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "True"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "True"
+    },
+    "system.testDotNet8Compatibility": {
+      "value": "true"
+    },
+    "system.dotNet8CompatibilityOutputLength": {
+      "value": "200"
+    },
+    "system.dotNet8CompatibilityOutputPattern": {
+      "value": "GLIBCXX"
+    },
+    "system.dotNet8CompatibilityWarning": {
+      "value": "The Actions runner will no longer support your OS version on November 1, 2024. Please upgrade to a supported version. For information, refer https://github.blog/changelog/2024-08-19-notice-of-upcoming-deprecations-and-breaking-changes-in-github-actions-runners/"
+    },
+    "system.orchestrationId": {
+      "value": "32c19ca5-d20e-4047-b8c0-6d60891df51c.build._18_x"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 41,
+    "planId": "32c19ca5-d20e-4047-b8c0-6d60891df51c",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/3",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "character-sheet-editor"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "willokko"
+    }
+  },
+  "timeline": {
+    "id": "32c19ca5-d20e-4047-b8c0-6d60891df51c",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "6621f301-ad18-5d46-97dd-869f4cb20c65",
+  "jobDisplayName": "build (18.x)",
+  "jobName": "_18_x",
+  "requestId": 7,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "d154bd3a-711e-4324-a5b6-7acd7d95b173",
+          "ServerName": "gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/",
+          "FeedStreamUrl": "https://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://results-receiver.actions.githubusercontent.com/health\",\"https://pkg.actions.githubusercontent.com/health\",\"https://actions-results-receiver-production.githubapp.com/health\",\"https://pipelinesghubeus12.actions.githubusercontent.com/_apis/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelinesghubeus12.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+        },
+        {
+          "k": "repository",
+          "v": "willokko/character-sheet-editor"
+        },
+        {
+          "k": "repository_owner",
+          "v": "willokko"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "143515354"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/willokko/character-sheet-editor.git"
+        },
+        {
+          "k": "run_id",
+          "v": "13604603300"
+        },
+        {
+          "k": "run_number",
+          "v": "3"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "940862971"
+        },
+        {
+          "k": "actor_id",
+          "v": "143515354"
+        },
+        {
+          "k": "actor",
+          "v": "willokko"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "willokko"
+        },
+        {
+          "k": "workflow",
+          "v": "Node.js CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "33467c2bd47fed3382a47e5ed123826086d249fe"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "143515354+willokko@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "willokko"
+                              },
+                              {
+                                "k": "username",
+                                "v": "willokko"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update node.js.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-03-01T09:09:21-03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "bd1ec3350b77b415cee7ba7f5e23eca11858eaba"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/willokko/character-sheet-editor/commit/314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/willokko/character-sheet-editor/compare/33467c2bd47f...314f54d2e358"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "143515354+willokko@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "username",
+                            "v": "willokko"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update node.js.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-03-01T09:09:21-03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "bd1ec3350b77b415cee7ba7f5e23eca11858eaba"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/willokko/character-sheet-editor/commit/314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "143515354+willokko@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "willokko"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1740786975.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Criação de personagem para RPGs"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": true
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "id",
+                      "v": 940862971.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "character-sheet-editor"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOBRt-w"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/143515354?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "143515354+willokko@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/willokko/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/willokko/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/willokko/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/willokko/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/willokko"
+                          },
+                          {
+                            "k": "id",
+                            "v": 143515354.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "name",
+                            "v": "willokko"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCI3e2g"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/willokko/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/willokko/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/willokko/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/willokko/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/willokko/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/willokko"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1740830961.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 20107.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:willokko/character-sheet-editor.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/willokko/character-sheet-editor/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-03-01T12:05:20Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/willokko/character-sheet-editor"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/143515354?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/willokko/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/willokko/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/willokko/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/willokko/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/willokko"
+                    },
+                    {
+                      "k": "id",
+                      "v": 143515354.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "willokko"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCI3e2g"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/willokko/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/willokko/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/willokko/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/willokko/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/willokko/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/willokko"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "willokko/character-sheet-editor/.github/workflows/node.js.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "314f54d2e358b61a5fe0810b5a45570bfc7decd0"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_uses_cache_service_v2",
+          "v": true
+        },
+        {
+          "k": "block_artifacts_v3_exempted",
+          "v": false
+        },
+        {
+          "k": "larger_runners_custom_image_generation",
+          "v": false
+        }
+      ]
+    },
+    "partialrerun": false,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "18.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 3.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 3.0
+        }
+      ]
+    },
+    "EndpointsOverride": null
+  }
+}
+[2025-03-01 12:08:44Z INFO JobRunner] Job ID 6621f301-ad18-5d46-97dd-869f4cb20c65
+[2025-03-01 12:08:44Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.dll
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] binPath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] RootFolder: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] ConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] CredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'Service': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service'
+[2025-03-01 12:08:44Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service
+[2025-03-01 12:08:44Z INFO ConfigurationStore] Read setting file: 322 chars
+[2025-03-01 12:08:44Z INFO JobRunner] Creating job server with URL: https://pipelinesghubeus12.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/
+[2025-03-01 12:08:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:08:44Z INFO Worker] Listening for cancel message from the channel.
+[2025-03-01 12:08:44Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-03-01 12:08:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:08:44Z INFO JobServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-03-01 12:08:44Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2025-03-01 12:08:44Z INFO JobServerQueue] Initializing results client
+[2025-03-01 12:08:44Z INFO JobServerQueue] Start process web console line queue.
+[2025-03-01 12:08:44Z INFO JobServerQueue] Start process file upload queue.
+[2025-03-01 12:08:44Z INFO JobServerQueue] Start results file upload queue.
+[2025-03-01 12:08:44Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-01 12:08:44Z INFO JobServerQueue] Start process timeline update queue.
+[2025-03-01 12:08:44Z INFO ExecutionContext] Initialize GitHub context
+[2025-03-01 12:08:44Z INFO ExecutionContext] Initialize Env context
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:44Z INFO JobRunner] Starting the job execution context.
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO JobRunner] Validating directory permissions for: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Tools': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_tool'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:08:44Z INFO JobRunner] Getting job extension.
+[2025-03-01 12:08:44Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.setup_info'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_PipelineMapping\willokko/character-sheet-editor\PipelineFolder.json
+[2025-03-01 12:08:44Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO JobExtension] Downloading actions
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:44Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:45Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:45Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683' into C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\_temp_087ba3af-0fdc-49fc-bb56-db2aa2fc23e6\feba839c-d4e4-43f5-8287-8e22876f2ee9.zip.
+[2025-03-01 12:08:45Z INFO JobServer] Successfully started websocket client.
+[2025-03-01 12:08:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e18b1af3-33ed-47e1-8696-81306bd09d28', success rate: 1/1.
+[2025-03-01 12:08:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e18b1af3-33ed-47e1-8696-81306bd09d28', success rate: 1/1.
+[2025-03-01 12:08:45Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-03-01 12:08:46Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/11bd71901bbe5b1630ceea73d27597364c9af683 X-GitHub-Request-Id: 32D4:D56B8:36B48:DE5AC:67C2F8F9 Http Status: OK
+[2025-03-01 12:08:46Z INFO ActionManager] Finished getting action repository.
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:46Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:46Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/zipball/1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a' into C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\_temp_ed06d16c-3de1-49e8-97af-59374f7a7728\02e1dcb6-1cd1-4a68-a486-59686e9ab6ef.zip.
+[2025-03-01 12:08:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e18b1af3-33ed-47e1-8696-81306bd09d28', success rate: 1/1.
+[2025-03-01 12:08:47Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/setup-node/zipball/1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a X-GitHub-Request-Id: 3315:132FCC:36385:DDE56:67C2F8FA Http Status: OK
+[2025-03-01 12:08:48Z INFO ActionManager] Finished getting action repository.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:08:48Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManager] Load action that reference repository from 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:08:48Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-03-01 12:08:48Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-03-01 12:08:48Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Ignore action property author.
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:08:48Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManager] Load action that reference repository from 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\setup-node\v4'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Ignore action property author.
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:08:48Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-03-01 12:08:48Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2025-03-01 12:08:48Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO JobExtension] Adding .
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO JobExtension] Total accessible running process: 194.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO JobExtension] Start checking server connectivity.
+[2025-03-01 12:08:48Z INFO JobExtension] Check server connectivity for https://acghubeus0.actions.githubusercontent.com/_apis/health.
+[2025-03-01 12:08:48Z INFO JobExtension] Check server connectivity for https://results-receiver.actions.githubusercontent.com/health.
+[2025-03-01 12:08:48Z INFO JobExtension] Check server connectivity for https://pkg.actions.githubusercontent.com/health.
+[2025-03-01 12:08:48Z INFO JobExtension] Check server connectivity for https://actions-results-receiver-production.githubapp.com/health.
+[2025-03-01 12:08:48Z INFO JobExtension] Check server connectivity for https://pipelinesghubeus12.actions.githubusercontent.com/_apis/health.
+[2025-03-01 12:08:48Z INFO JobExtension] Start checking service connectivity in background.
+[2025-03-01 12:08:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "e18b1af3-33ed-47e1-8696-81306bd09d28",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2025-03-01T12:08:44.8221711Z",
+  "finishTime": "2025-03-01T12:08:48.2285537Z"
+}.
+[2025-03-01 12:08:48Z INFO JobRunner] Total job steps: 6.
+[2025-03-01 12:08:48Z INFO JobRunner] Run all job steps.
+[2025-03-01 12:08:48Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v4'
+[2025-03-01 12:08:48Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:08:48Z INFO StepsRunner] Result: true
+[2025-03-01 12:08:48Z INFO StepsRunner] Starting the step.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO StepsRunner] Which2: 'chcp'
+[2025-03-01 12:08:48Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] Process started with process id 3988, waiting for process exit.
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] Finished process 3988 with exit code 0, and elapsed time 00:00:00.0093323.
+[2025-03-01 12:08:48Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManager] Load action that reference repository from 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:08:48Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-03-01 12:08:48Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-03-01 12:08:48Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-03-01 12:08:48Z INFO ExecutionContext] Reserve record order 8 to 14 for post job actions.
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:08:48Z INFO ExecutionContext] Write event payload to C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:08:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "willokko/character-sheet-editor"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:08:48Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-03-01 12:08:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command error
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command group
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-03-01 12:08:48Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:48Z INFO HostContext] Well known directory 'Externals': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\externals'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\externals\node20\bin\node.exe'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\character-sheet-editor\character-sheet-editor'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-03-01 12:08:48Z INFO ProcessInvokerWrapper] Process started with process id 188, waiting for process exit.
+[2025-03-01 12:08:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e18b1af3-33ed-47e1-8696-81306bd09d28', success rate: 1/1.
+[2025-03-01 12:08:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:48Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-03-01 12:08:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:48Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-01 12:08:48Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\32c19ca5-d20e-4047-b8c0-6d60891df51c_e18b1af3-33ed-47e1-8696-81306bd09d28.1
+[2025-03-01 12:08:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:49Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-03-01 12:08:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:49Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-03-01 12:08:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:58Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:58Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:08:58Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:08:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:08:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:08Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Finished process 188 with exit code 1, and elapsed time 00:00:24.0025705.
+[2025-03-01 12:09:12Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp\_runner_file_commands\step_summary_e4b0e13b-b068-4d77-bb20-e71b31ccc069) is empty; skipping attachment upload
+[2025-03-01 12:09:12Z INFO StepsRunner] Step result: Failed
+[2025-03-01 12:09:12Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "5d7618ff-3bb2-5757-b1b5-7570fdc92efe",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "failed",
+  "errorMessages": [
+    "unable to create file node_modules/@babel/preset-env/node_modules/babel-plugin-polyfill-corejs3/core-js-compat/get-modules-list-for-target-version.js: Filename too long",
+    "Could not reset index file to revision 'HEAD'.",
+    "Unable to clean or reset the repository. The repository will be recreated instead."
+  ],
+  "executionTimeInSeconds": 25,
+  "startTime": "2025-03-01T12:08:48.241128Z",
+  "finishTime": "2025-03-01T12:09:12.3185693Z"
+}.
+[2025-03-01 12:09:12Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='Use Node.js 18.x'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: false
+[2025-03-01 12:09:12Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-03-01 12:09:12Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='install dependencies'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: false
+[2025-03-01 12:09:12Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-03-01 12:09:12Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='Build project'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: false
+[2025-03-01 12:09:12Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-03-01 12:09:12Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='Start Server'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: false
+[2025-03-01 12:09:12Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-03-01 12:09:12Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='Start frontend'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: success()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: false
+[2025-03-01 12:09:12Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-03-01 12:09:12Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-03-01 12:09:12Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:12Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v4'
+[2025-03-01 12:09:12Z INFO StepsRunner] Evaluating: always()
+[2025-03-01 12:09:12Z INFO StepsRunner] Result: true
+[2025-03-01 12:09:12Z INFO StepsRunner] Starting the step.
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO StepsRunner] Which2: 'chcp'
+[2025-03-01 12:09:12Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Process started with process id 6068, waiting for process exit.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Finished process 6068 with exit code 0, and elapsed time 00:00:00.0083303.
+[2025-03-01 12:09:12Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:09:12Z INFO ActionManager] Load action that reference repository from 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\checkout\v4'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Actions': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions'
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-03-01 12:09:12Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-03-01 12:09:12Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-03-01 12:09:12Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:09:12Z INFO ExecutionContext] Write event payload to C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Temp': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp'
+[2025-03-01 12:09:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "willokko/character-sheet-editor"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2025-03-01 12:09:12Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-03-01 12:09:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command error
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command group
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-03-01 12:09:12Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:12Z INFO HostContext] Well known directory 'Externals': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\externals'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\externals\node20\bin\node.exe'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\character-sheet-editor\character-sheet-editor'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-03-01 12:09:12Z INFO ProcessInvokerWrapper] Process started with process id 13588, waiting for process exit.
+[2025-03-01 12:09:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5d7618ff-3bb2-5757-b1b5-7570fdc92efe', success rate: 1/1.
+[2025-03-01 12:09:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e8f64c86-fa54-4912-a149-bcc3fca326df', success rate: 1/1.
+[2025-03-01 12:09:12Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-03-01 12:09:12Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-01 12:09:12Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\32c19ca5-d20e-4047-b8c0-6d60891df51c_5d7618ff-3bb2-5757-b1b5-7570fdc92efe.1
+[2025-03-01 12:09:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e8f64c86-fa54-4912-a149-bcc3fca326df', success rate: 1/1.
+[2025-03-01 12:09:12Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-03-01 12:09:13Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-03-01 12:09:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e8f64c86-fa54-4912-a149-bcc3fca326df', success rate: 1/1.
+[2025-03-01 12:09:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e8f64c86-fa54-4912-a149-bcc3fca326df', success rate: 1/1.
+[2025-03-01 12:09:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:13Z INFO ProcessInvokerWrapper] Finished process 13588 with exit code 0, and elapsed time 00:00:01.5334418.
+[2025-03-01 12:09:13Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp\_runner_file_commands\step_summary_e43b51e6-0a39-482a-bfec-605f33429478) is empty; skipping attachment upload
+[2025-03-01 12:09:13Z INFO StepsRunner] Step result: 
+[2025-03-01 12:09:13Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "e8f64c86-fa54-4912-a149-bcc3fca326df",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-03-01T12:09:12.3229929Z",
+  "finishTime": "2025-03-01T12:09:13.882273Z"
+}.
+[2025-03-01 12:09:13Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-03-01 12:09:13Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-03-01 12:09:13Z INFO JobRunner] Finalize job.
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:13Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:09:13Z INFO JobExtension] Initialize Env context
+[2025-03-01 12:09:13Z INFO JobExtension] Initialize steps context
+[2025-03-01 12:09:13Z INFO JobExtension] Total accessible running process: 189.
+[2025-03-01 12:09:13Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2025-03-01 12:09:13Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-03-01 12:09:13Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-03-01 12:09:13Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-03-01 12:09:13Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-03-01 12:09:13Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2025-03-01 12:09:13Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "2696e27a-fe50-4d76-89dc-442600dc40d1",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-03-01T12:09:13.8861233Z",
+  "finishTime": "2025-03-01T12:09:13.8932124Z"
+}.
+[2025-03-01 12:09:13Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-03-01 12:09:13Z INFO JobRunner] Completing the job execution context.
+[2025-03-01 12:09:13Z INFO JobRunner] Shutting down the job server queue.
+[2025-03-01 12:09:13Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-03-01 12:09:14Z INFO JobServerQueue] All queue process task stopped.
+[2025-03-01 12:09:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2696e27a-fe50-4d76-89dc-442600dc40d1', success rate: 1/1.
+[2025-03-01 12:09:14Z INFO JobServerQueue] Web console line queue drained.
+[2025-03-01 12:09:14Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-03-01 12:09:15Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-03-01 12:09:15Z INFO JobServerQueue] File upload queue drained.
+[2025-03-01 12:09:15Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-01 12:09:15Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2025-03-01 12:09:15Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-01 12:09:15Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\32c19ca5-d20e-4047-b8c0-6d60891df51c_e8f64c86-fa54-4912-a149-bcc3fca326df.1
+[2025-03-01 12:09:15Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-01 12:09:15Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\32c19ca5-d20e-4047-b8c0-6d60891df51c_2696e27a-fe50-4d76-89dc-442600dc40d1.1
+[2025-03-01 12:09:16Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-03-01 12:09:16Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\blocks\32c19ca5-d20e-4047-b8c0-6d60891df51c_6621f301-ad18-5d46-97dd-869f4cb20c65.1
+[2025-03-01 12:09:16Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2025-03-01 12:09:16Z INFO JobServerQueue] Results upload queue drained.
+[2025-03-01 12:09:16Z INFO JobServerQueue] Timeline update queue drained.
+[2025-03-01 12:09:16Z INFO JobServerQueue] Disposing job server ...
+[2025-03-01 12:09:16Z INFO JobServerQueue] Disposing results server ...
+[2025-03-01 12:09:16Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-03-01 12:09:16Z INFO JobServerQueue] Actions upload time: 1533 ms, Result upload time: 2053 ms
+[2025-03-01 12:09:16Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_work\_temp
+[2025-03-01 12:09:16Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:16Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:09:16Z INFO HostContext] Well known directory 'Diag': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag'
+[2025-03-01 12:09:16Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\_diag\.telemetry'
+[2025-03-01 12:09:16Z INFO JobRunner] Raising job completed event
+[2025-03-01 12:09:16Z INFO Worker] Job completed.

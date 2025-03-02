@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "willokko/character-sheet-editor",
+  "pipelineDirectory": "character-sheet-editor",
+  "workspaceDirectory": "character-sheet-editor\\character-sheet-editor",
+  "repositories": {
+    "willokko/character-sheet-editor": {
+      "repositoryPath": "character-sheet-editor\\character-sheet-editor",
+      "lastRunOn": "03/01/2025 09:04:40 -03:00"
+    }
+  },
+  "lastRunOn": "03/01/2025 09:09:20 -03:00"
+}

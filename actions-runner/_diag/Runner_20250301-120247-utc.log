@@ -1,0 +1,406 @@
+[2025-03-01 12:02:47Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:02:47Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-03-01 12:02:47Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-03-01 12:02:47Z INFO Listener] Version: 2.322.0
+[2025-03-01 12:02:47Z INFO Listener] Commit: 0edc478ca75d0a753dcbcec7405f3f26db67b1ac
+[2025-03-01 12:02:47Z INFO Listener] Culture: pt-BR
+[2025-03-01 12:02:47Z INFO Listener] UI Culture: pt-BR
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO Listener] Validating directory permissions for: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO CommandLineParser] Parse
+[2025-03-01 12:02:47Z INFO CommandLineParser] Parsing 1 args
+[2025-03-01 12:02:47Z INFO CommandLineParser] parsing argument
+[2025-03-01 12:02:47Z INFO CommandLineParser] HasArgs: False
+[2025-03-01 12:02:47Z INFO CommandLineParser] Adding Command: run
+[2025-03-01 12:02:47Z INFO Listener] Arguments parsed
+[2025-03-01 12:02:47Z INFO Runner] ExecuteCommand
+[2025-03-01 12:02:47Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Listener.dll
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] binPath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] RootFolder: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'Runner': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] ConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.runner
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] CredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_migrated
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'Service': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.service
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'help': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'version': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'check': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Command 'configure': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Command 'remove': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-03-01 12:02:47Z INFO ConfigurationManager] LoadSettings
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured()
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-01 12:02:47Z INFO ConfigurationManager] Is configured: True
+[2025-03-01 12:02:47Z INFO ConfigurationStore] Read setting file: 322 chars
+[2025-03-01 12:02:47Z INFO ConfigurationManager] Settings Loaded
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-03-01 12:02:47Z INFO CommandSettings] Command 'run': 'True'
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured()
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-01 12:02:47Z INFO ConfigurationManager] Is configured: True
+[2025-03-01 12:02:47Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-03-01 12:02:47Z INFO Runner] Set runner startup type - Manual
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-01 12:02:47Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-01 12:02:47Z INFO Runner] RunAsync
+[2025-03-01 12:02:47Z INFO ConfigurationManager] LoadSettings
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured()
+[2025-03-01 12:02:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-01 12:02:47Z INFO ConfigurationManager] Is configured: True
+[2025-03-01 12:02:47Z INFO ConfigurationManager] Settings Loaded
+[2025-03-01 12:02:47Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "DESKTOP-L87PPM5",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus12.actions.githubusercontent.com/gmrwW9Pkm9IO0nE2CCbhTebX6xiivCsNQBbW397kC0eqrRNG5X/",
+  "GitHubUrl": "https://github.com/willokko/character-sheet-editor",
+  "WorkFolder": "_work"
+}
+[2025-03-01 12:02:47Z INFO MessageListener] Loading Credentials
+[2025-03-01 12:02:47Z INFO ConfigurationStore] HasCredentials()
+[2025-03-01 12:02:47Z INFO ConfigurationStore] stored True
+[2025-03-01 12:02:47Z INFO CredentialManager] GetCredentialProvider
+[2025-03-01 12:02:47Z INFO CredentialManager] Creating type OAuth
+[2025-03-01 12:02:47Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:02:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner'
+[2025-03-01 12:02:47Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams'
+[2025-03-01 12:02:47Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:02:47Z INFO MessageListener] Attempt to create session.
+[2025-03-01 12:02:47Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-01 12:02:47Z INFO RunnerServer] EstablishVssConnection
+[2025-03-01 12:02:47Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-01 12:02:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:02:47Z INFO RunnerServer] EstablishVssConnection
+[2025-03-01 12:02:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-01 12:02:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:02:47Z INFO RunnerServer] EstablishVssConnection
+[2025-03-01 12:02:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-01 12:02:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:02:48Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:02:48Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:02:48Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:02:48Z INFO MessageListener] VssConnection created
+[2025-03-01 12:02:48Z INFO Terminal] WRITE LINE: 
+[2025-03-01 12:02:48Z INFO Terminal] WRITE LINE: 
+[2025-03-01 12:02:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:02:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:02:48Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:02:49Z INFO MessageListener] Session created.
+[2025-03-01 12:02:49Z INFO Terminal] WRITE LINE: Current runner version: '2.322.0'
+[2025-03-01 12:02:49Z INFO Terminal] WRITE LINE: 2025-03-01 12:02:49Z: Listening for Jobs
+[2025-03-01 12:02:49Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-03-01 12:02:49Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:02:49Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:04:37Z INFO MessageListener] Message '9178901502218915246' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:04:37Z INFO ConfigurationStore] HasCredentials()
+[2025-03-01 12:04:37Z INFO ConfigurationStore] stored True
+[2025-03-01 12:04:37Z INFO CredentialManager] GetCredentialProvider
+[2025-03-01 12:04:37Z INFO CredentialManager] Creating type OAuth
+[2025-03-01 12:04:37Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-01 12:04:37Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:04:37Z INFO ActionsRunServer] EstablishVssConnection
+[2025-03-01 12:04:37Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-03-01 12:04:37Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:04:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:04:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:04:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:04:38Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:04:39Z INFO JobDispatcher] Job request 4 for plan ea5597d9-7708-4480-8d67-70231097f17a job 6621f301-ad18-5d46-97dd-869f4cb20c65 received.
+[2025-03-01 12:04:39Z INFO JobDispatcher] Pull OrchestrationId ea5597d9-7708-4480-8d67-70231097f17a.build._18_x from JWT claims
+[2025-03-01 12:04:39Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-01 12:04:39Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:04:39Z INFO Terminal] WRITE LINE: 2025-03-01 12:04:39Z: Running job: build (18.x)
+[2025-03-01 12:04:39Z INFO JobDispatcher] Start renew job request 4 for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:04:39Z INFO JobDispatcher] Successfully renew job request 4, job is valid till 01/03/2025 12:15:23
+[2025-03-01 12:04:39Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.exe'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2280 2292'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-01 12:04:39Z INFO ProcessInvokerWrapper] Process started with process id 12980, waiting for process exit.
+[2025-03-01 12:04:39Z INFO JobDispatcher] Send job request message to worker for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:04:39Z INFO ProcessChannel] Sending message of length 25801, with hash '342ed2d93036b093393474cdfb7ffbe5c4d522e5277cc540fa3415a1578e8a66'
+[2025-03-01 12:04:39Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-01 12:04:39Z INFO JobNotification] Entering StartMonitor
+[2025-03-01 12:05:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:05:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:05:08Z INFO ProcessInvokerWrapper] Finished process 12980 with exit code 102, and elapsed time 00:00:29.0713333.
+[2025-03-01 12:05:08Z INFO JobDispatcher] Worker finished for job 6621f301-ad18-5d46-97dd-869f4cb20c65. Code: 102
+[2025-03-01 12:05:08Z INFO JobDispatcher] finish job request for job 6621f301-ad18-5d46-97dd-869f4cb20c65 with result: Failed
+[2025-03-01 12:05:08Z INFO Terminal] WRITE LINE: 2025-03-01 12:05:08Z: Job build (18.x) completed with result: Failed
+[2025-03-01 12:05:08Z INFO JobDispatcher] Stop renew job request for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:05:08Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 4.
+[2025-03-01 12:05:08Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-01 12:05:08Z INFO JobNotification] Entering EndMonitor
+[2025-03-01 12:05:08Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-01 12:05:09Z INFO MessageListener] Message '3811026977603794806' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:05:09Z INFO ConfigurationStore] HasCredentials()
+[2025-03-01 12:05:09Z INFO ConfigurationStore] stored True
+[2025-03-01 12:05:09Z INFO CredentialManager] GetCredentialProvider
+[2025-03-01 12:05:09Z INFO CredentialManager] Creating type OAuth
+[2025-03-01 12:05:09Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-01 12:05:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:05:09Z INFO ActionsRunServer] EstablishVssConnection
+[2025-03-01 12:05:09Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-03-01 12:05:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:05:10Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:05:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:05:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:05:10Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:05:10Z INFO JobDispatcher] Job request 5 for plan ea5597d9-7708-4480-8d67-70231097f17a job 7b550edd-dd8b-5af2-7e43-cb146d97a45a received.
+[2025-03-01 12:05:10Z INFO JobDispatcher] Pull OrchestrationId ea5597d9-7708-4480-8d67-70231097f17a.build._22_x from JWT claims
+[2025-03-01 12:05:10Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-01 12:05:10Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:05:10Z INFO JobDispatcher] Job request 6621f301-ad18-5d46-97dd-869f4cb20c65 processed succeed.
+[2025-03-01 12:05:10Z INFO Terminal] WRITE LINE: 2025-03-01 12:05:10Z: Running job: build (22.x)
+[2025-03-01 12:05:10Z INFO JobDispatcher] Start renew job request 5 for job 7b550edd-dd8b-5af2-7e43-cb146d97a45a.
+[2025-03-01 12:05:11Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 01/03/2025 12:15:54
+[2025-03-01 12:05:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.exe'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2072 2216'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-01 12:05:11Z INFO ProcessInvokerWrapper] Process started with process id 1468, waiting for process exit.
+[2025-03-01 12:05:11Z INFO JobDispatcher] Send job request message to worker for job 7b550edd-dd8b-5af2-7e43-cb146d97a45a.
+[2025-03-01 12:05:11Z INFO ProcessChannel] Sending message of length 25801, with hash '51932d0cfcae5d0a3f028255010cd65f1e90e874bc6e6f63d4d7cfe025833360'
+[2025-03-01 12:05:11Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-01 12:05:11Z INFO JobNotification] Entering StartMonitor
+[2025-03-01 12:05:12Z INFO MessageListener] Message '6620503459844828313' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:05:12Z INFO JobDispatcher] Job cancellation request 7b550edd-dd8b-5af2-7e43-cb146d97a45a received, cancellation timeout 5 minutes.
+[2025-03-01 12:05:12Z INFO JobDispatcher] Send job cancellation message to worker for job 7b550edd-dd8b-5af2-7e43-cb146d97a45a.
+[2025-03-01 12:05:12Z INFO ProcessChannel] Sending message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2025-03-01 12:05:13Z INFO MessageListener] Message '6440290638196425008' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:05:13Z INFO JobDispatcher] Job cancellation request 7b550edd-dd8b-5af2-7e43-cb146d97a45a received, cancellation timeout 5 minutes.
+[2025-03-01 12:05:15Z INFO MessageListener] Message '8843787249681380098' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:05:15Z INFO JobDispatcher] Job cancellation request 7b550edd-dd8b-5af2-7e43-cb146d97a45a received, cancellation timeout 5 minutes.
+[2025-03-01 12:05:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:05:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:05:15Z INFO ProcessInvokerWrapper] Finished process 1468 with exit code 103, and elapsed time 00:00:04.9095586.
+[2025-03-01 12:05:15Z INFO JobDispatcher] finish job request for job 7b550edd-dd8b-5af2-7e43-cb146d97a45a with result: Canceled
+[2025-03-01 12:05:15Z INFO Terminal] WRITE LINE: 2025-03-01 12:05:15Z: Job build (22.x) completed with result: Canceled
+[2025-03-01 12:05:15Z INFO JobDispatcher] Stop renew job request for job 7b550edd-dd8b-5af2-7e43-cb146d97a45a.
+[2025-03-01 12:05:15Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 5.
+[2025-03-01 12:05:15Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-01 12:05:15Z INFO JobNotification] Entering EndMonitor
+[2025-03-01 12:05:15Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-01 12:05:15Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:08:42Z INFO MessageListener] Message '4981304874943485238' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:08:42Z INFO ConfigurationStore] HasCredentials()
+[2025-03-01 12:08:42Z INFO ConfigurationStore] stored True
+[2025-03-01 12:08:42Z INFO CredentialManager] GetCredentialProvider
+[2025-03-01 12:08:42Z INFO CredentialManager] Creating type OAuth
+[2025-03-01 12:08:42Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-01 12:08:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:08:42Z INFO ActionsRunServer] EstablishVssConnection
+[2025-03-01 12:08:42Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-03-01 12:08:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:08:42Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:08:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:08:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:08:43Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:08:43Z INFO JobDispatcher] Job request 7 for plan 32c19ca5-d20e-4047-b8c0-6d60891df51c job 6621f301-ad18-5d46-97dd-869f4cb20c65 received.
+[2025-03-01 12:08:43Z INFO JobDispatcher] Pull OrchestrationId 32c19ca5-d20e-4047-b8c0-6d60891df51c.build._18_x from JWT claims
+[2025-03-01 12:08:43Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-01 12:08:43Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:08:43Z INFO JobDispatcher] Job request 7b550edd-dd8b-5af2-7e43-cb146d97a45a processed succeed.
+[2025-03-01 12:08:43Z INFO Terminal] WRITE LINE: 2025-03-01 12:08:43Z: Running job: build (18.x)
+[2025-03-01 12:08:43Z INFO JobDispatcher] Start renew job request 7 for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:08:43Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 01/03/2025 12:19:27
+[2025-03-01 12:08:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.exe'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2104 2436'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-01 12:08:43Z INFO ProcessInvokerWrapper] Process started with process id 11476, waiting for process exit.
+[2025-03-01 12:08:43Z INFO JobDispatcher] Send job request message to worker for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:08:43Z INFO ProcessChannel] Sending message of length 25801, with hash '9eb357d140e668191083d2b5f7acfbc6322511012796a04a24db4c70cd18dfcf'
+[2025-03-01 12:08:44Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-01 12:08:44Z INFO JobNotification] Entering StartMonitor
+[2025-03-01 12:09:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:17Z INFO ProcessInvokerWrapper] Finished process 11476 with exit code 102, and elapsed time 00:00:33.1579481.
+[2025-03-01 12:09:17Z INFO JobDispatcher] Worker finished for job 6621f301-ad18-5d46-97dd-869f4cb20c65. Code: 102
+[2025-03-01 12:09:17Z INFO JobDispatcher] finish job request for job 6621f301-ad18-5d46-97dd-869f4cb20c65 with result: Failed
+[2025-03-01 12:09:17Z INFO Terminal] WRITE LINE: 2025-03-01 12:09:17Z: Job build (18.x) completed with result: Failed
+[2025-03-01 12:09:17Z INFO JobDispatcher] Stop renew job request for job 6621f301-ad18-5d46-97dd-869f4cb20c65.
+[2025-03-01 12:09:17Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 7.
+[2025-03-01 12:09:17Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-01 12:09:17Z INFO JobNotification] Entering EndMonitor
+[2025-03-01 12:09:17Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-01 12:09:17Z INFO MessageListener] Message '5675308882916660809' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:09:17Z INFO ConfigurationStore] HasCredentials()
+[2025-03-01 12:09:17Z INFO ConfigurationStore] stored True
+[2025-03-01 12:09:17Z INFO CredentialManager] GetCredentialProvider
+[2025-03-01 12:09:17Z INFO CredentialManager] Creating type OAuth
+[2025-03-01 12:09:17Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-01 12:09:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:09:17Z INFO ActionsRunServer] EstablishVssConnection
+[2025-03-01 12:09:17Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2025-03-01 12:09:17Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-01 12:09:18Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-01 12:09:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:09:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\.credentials_rsaparams
+[2025-03-01 12:09:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-01 12:09:19Z INFO JobDispatcher] Job request 8 for plan 32c19ca5-d20e-4047-b8c0-6d60891df51c job ae5d326c-2fcb-5a99-b864-cfac23409180 received.
+[2025-03-01 12:09:19Z INFO JobDispatcher] Pull OrchestrationId 32c19ca5-d20e-4047-b8c0-6d60891df51c.build._20_x from JWT claims
+[2025-03-01 12:09:19Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-01 12:09:19Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:09:19Z INFO JobDispatcher] Job request 6621f301-ad18-5d46-97dd-869f4cb20c65 processed succeed.
+[2025-03-01 12:09:19Z INFO Terminal] WRITE LINE: 2025-03-01 12:09:19Z: Running job: build (20.x)
+[2025-03-01 12:09:19Z INFO JobDispatcher] Start renew job request 8 for job ae5d326c-2fcb-5a99-b864-cfac23409180.
+[2025-03-01 12:09:19Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 01/03/2025 12:20:02
+[2025-03-01 12:09:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin\Runner.Worker.exe'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2584 2596'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\José Wilson\OneDrive\Documentos\codes\commit\character-sheet-editor\actions-runner\bin'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-01 12:09:19Z INFO ProcessInvokerWrapper] Process started with process id 3224, waiting for process exit.
+[2025-03-01 12:09:19Z INFO JobDispatcher] Send job request message to worker for job ae5d326c-2fcb-5a99-b864-cfac23409180.
+[2025-03-01 12:09:19Z INFO ProcessChannel] Sending message of length 25801, with hash '2f11568d2aeb19c2912167333a8b46822e6519cdcd39367c80d6a217a8e940ea'
+[2025-03-01 12:09:19Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-01 12:09:19Z INFO JobNotification] Entering StartMonitor
+[2025-03-01 12:09:20Z INFO MessageListener] Message '1510547942011778359' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:09:20Z INFO JobDispatcher] Job cancellation request ae5d326c-2fcb-5a99-b864-cfac23409180 received, cancellation timeout 5 minutes.
+[2025-03-01 12:09:20Z INFO JobDispatcher] Send job cancellation message to worker for job ae5d326c-2fcb-5a99-b864-cfac23409180.
+[2025-03-01 12:09:20Z INFO ProcessChannel] Sending message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2025-03-01 12:09:21Z INFO MessageListener] Message '9013248501254345089' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:09:21Z INFO JobDispatcher] Job cancellation request ae5d326c-2fcb-5a99-b864-cfac23409180 received, cancellation timeout 5 minutes.
+[2025-03-01 12:09:23Z INFO MessageListener] Message '8223866741851251907' received from session '8f8bda18-b26b-40ba-a42e-7924c6fc180d'.
+[2025-03-01 12:09:23Z INFO JobDispatcher] Job cancellation request ae5d326c-2fcb-5a99-b864-cfac23409180 received, cancellation timeout 5 minutes.
+[2025-03-01 12:09:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-01 12:09:24Z INFO ProcessInvokerWrapper] Finished process 3224 with exit code 103, and elapsed time 00:00:04.9474471.
+[2025-03-01 12:09:24Z INFO JobDispatcher] finish job request for job ae5d326c-2fcb-5a99-b864-cfac23409180 with result: Canceled
+[2025-03-01 12:09:24Z INFO Terminal] WRITE LINE: 2025-03-01 12:09:24Z: Job build (20.x) completed with result: Canceled
+[2025-03-01 12:09:24Z INFO JobDispatcher] Stop renew job request for job ae5d326c-2fcb-5a99-b864-cfac23409180.
+[2025-03-01 12:09:24Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 8.
+[2025-03-01 12:09:24Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-01 12:09:24Z INFO JobNotification] Entering EndMonitor
+[2025-03-01 12:09:24Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-01 12:09:24Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-01 12:11:11Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-03-01 12:11:11Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=8f8bda18-b26b-40ba-a42e-7924c6fc180d&status=Online&runnerVersion=2.322.0&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2025-03-01 12:11:11Z ERR  BrokerServer] Catch exception during request
+[2025-03-01 12:11:11Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo..
+ ---> System.Net.Sockets.SocketException (995): A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-03-01 12:11:11Z ERR  BrokerServer] #####################################################
+[2025-03-01 12:11:11Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo..
+ ---> System.Net.Sockets.SocketException (995): A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2025-03-01 12:11:11Z ERR  BrokerServer] #####################################################
+[2025-03-01 12:11:11Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo..
+ ---> System.Net.Sockets.SocketException (995): A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2025-03-01 12:11:11Z ERR  BrokerServer] #####################################################
+[2025-03-01 12:11:11Z ERR  BrokerServer] System.Net.Sockets.SocketException (995): A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+[2025-03-01 12:11:11Z WARN BrokerServer] Back off 5,255 seconds before next retry. 4 attempt left.
+[2025-03-01 12:11:11Z INFO MessageListener] Get next message has been cancelled.
+[2025-03-01 12:11:11Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-03-01 12:11:11Z INFO JobDispatcher] Ensure WorkerDispatcher for job ae5d326c-2fcb-5a99-b864-cfac23409180 run to finish, cancel any running job.
+[2025-03-01 12:11:11Z INFO JobDispatcher] Job request ae5d326c-2fcb-5a99-b864-cfac23409180 processed succeed.
+[2025-03-01 12:11:11Z INFO Runner] Deleting Runner Session...
+[2025-03-01 12:11:11Z INFO Listener] Runner execution been cancelled.
